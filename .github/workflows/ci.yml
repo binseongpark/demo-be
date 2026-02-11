@@ -19,3 +19,8 @@ jobs:
 
       - name: build
         run: echo "demo-be build!"
+  deploy:
+    runs-on: [backend]
+    needs: build
+    steps:
+      - run: echo "deploy!"

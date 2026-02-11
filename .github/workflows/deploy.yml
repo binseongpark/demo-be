@@ -1,10 +1,12 @@
-name: Deploy
-on:
-  workflow_run:
-    workflows: ["CI"]
-    types: [completed]
-jobs:
-  deploy:
-    runs-on: [backend]
-    steps:
-      - run: echo "deploy!"
+#name: Deploy
+#on:
+#  workflow_run:
+#    workflows: ["CI"]
+#    types: [completed]
+#jobs:
+#  deploy:
+#    runs-on: [backend]
+#    steps:
+#      - run: echo "deploy!"
+#
+#
